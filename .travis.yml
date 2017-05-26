@@ -1,4 +1,4 @@
-script: "./build_all.sh"
 lenguage: ruby
 rvm:
-    2.2.0
+    - 2.2.0
+script: "./build_all.sh"
