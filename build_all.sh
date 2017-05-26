@@ -6,4 +6,4 @@ for dir in */ ; do
 	cd $dir
 	rake
 	cd..
-done %
+done 
