@@ -1,11 +1,9 @@
 require 'rspec'
 require_relative '../model/orden_descendente'
-require_relative '../model/calculadora'
 
 describe 'OrdenDescendente' do
 
   before do
-  	@calculadora = Calculadora.new
   	@orden_descendente = OrdenDescendente.new
   end
 

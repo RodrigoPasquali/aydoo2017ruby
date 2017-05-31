@@ -1,6 +1,5 @@
 require 'rspec'
 require_relative '../model/orden_ascendente'
-require_relative '../model/calculadora'
 
 describe 'OrdenAscendete' do
 
