@@ -2,18 +2,15 @@ class VerificadorDeArgumentos
 
   def verificar_si_es_numero(arg)
   	@valor = false
-    if arg.is_a? Integer
-   	 @valor = true
-    end
-    return @valor
+  	raise TypeError, 'El argumento debe ser un numero'	unless arg.is_a? Integer
+    return @valor = true
   end
 
   def verificar_si_numero_es_mayor_a_cero(arg)
     @valor = false
-    if arg > 0
-   	 @valor = true
-    end
-    return @valor
+    ArgumentError
+    raise ArgumentError, 'El argumento debe ser un numero mayor a cero' unless arg > 0 
+    return @valor = true
   end
 
 end	

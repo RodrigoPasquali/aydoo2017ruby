@@ -19,22 +19,4 @@ describe 'Salida' do
     expect(valor_obtenido).to eq valor_esperado
   end 
 
-  it '"silla" deberia devolver mensaje de error' do
-  	valor_esperado = "Debe ingresar un numero"
-  	valor_obtenido = @salida.salida_orden_ascendente("silla")
-    expect(valor_obtenido).to eq valor_esperado
-  end 
-
-  it '0 deberia devolver mensaje de error' do
-  	valor_esperado = "Debe ingresar un numero mayor a 0"
-  	valor_obtenido = @salida.salida_orden_ascendente(0)
-    expect(valor_obtenido).to eq valor_esperado
-  end 
-
-  it '-1 deberia devolver mensaje de error' do
-  	valor_esperado = "Debe ingresar un numero mayor a 0"
-  	valor_obtenido = @salida.salida_orden_ascendente(-1)
-    expect(valor_obtenido).to eq valor_esperado
-  end 
-
 end

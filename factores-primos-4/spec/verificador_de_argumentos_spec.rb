@@ -19,22 +19,4 @@ describe 'VerificadorDeArgumentos' do
     expect(valor_esperado).to eq valor_obtenido
   end  
 
-  it '"carlos" deberia devolver false' do
-  	valor_esperado = false
-  	valor_obtenido = @verificador.verificar_si_es_numero("carlos")
-    expect(valor_obtenido).to eq valor_esperado
-  end  
-
-  it '0 deberia devolver false' do
-  	valor_esperado = false
-  	valor_obtenido = @verificador.verificar_si_numero_es_mayor_a_cero(0)
-    expect(valor_obtenido).to eq valor_esperado
-  end  
-
-  it '-1 deberia devolver false' do
-  	valor_esperado = false
-  	valor_obtenido = @verificador.verificar_si_numero_es_mayor_a_cero(-1)
-    expect(valor_obtenido).to eq valor_esperado
-  end 
-
 end
