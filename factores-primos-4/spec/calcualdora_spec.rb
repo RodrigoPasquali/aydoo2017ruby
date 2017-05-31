@@ -13,19 +13,7 @@ describe 'Calculadora' do
     expect(valor_esperado).to match_array(valor_obtenido)
   end  
 
-  it 'factores primos de 0 deberia devolver mensaje de error' do
-    valor_esperado = "Se debe introducir un numero entero mayor a 0"
-    valor_obtenido = @calculadora.calcular_factores_primos(0)
-    expect(valor_esperado).to eq valor_obtenido
-  end
-
-  it 'factores primos de -1 deberia devolver mensaje de error' do
-  	valor_esperado = "Se debe introducir un numero entero mayor a 0"
-    valor_obtenido = @calculadora.calcular_factores_primos(-1)
-    expect(valor_esperado).to eq valor_obtenido
-  end
-
-   it 'factores primos de 5 deberia ser [5]' do
+  it 'factores primos de 5 deberia ser [5]' do
   	valor_esperado = [5]
   	valor_obtenido = @calculadora.calcular_factores_primos(5)
     expect(valor_esperado).to match_array(valor_obtenido)
