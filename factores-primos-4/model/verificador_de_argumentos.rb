@@ -2,7 +2,7 @@ class VerificadorDeArgumentos
 
   def verificar_si_es_numero(arg)
   	@valor = false
-  	raise TypeError, 'El argumento debe ser un numero'	unless arg.is_a? Integer
+  	raise TypeError, 'El argumento debe ser un numero'	unless arg =~ /\A[-+]?[0-9]*\.?[0-9]+\Z/
     return @valor = true
   end
 
